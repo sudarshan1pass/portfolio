@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { ExternalLink, Github, Code, Palette, ShoppingCart, Users } from 'lucide-react';
 
