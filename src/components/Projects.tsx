@@ -15,7 +15,7 @@ const Projects = () => {
     {
       title: 'web site',
       description: 'A comprehensive social media management dashboard with real-time analytics, post scheduling, and user engagement metrics. Built with React.js and modern styling approaches.',
-      image: 'project.png',
+      image: 'Home.png',
       technologies: ['React.js', 'Material UI','TypeScript','Framer Motion', 'Vite'],
       icon: Users,
       gradient: 'from-emerald-500 to-cyan-600',
