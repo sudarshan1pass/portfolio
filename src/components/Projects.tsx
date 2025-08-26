@@ -8,16 +8,18 @@ const Projects = () => {
       description: 'A full-featured e-commerce application built with React.js, Redux for state management, and Material UI for the interface. Features include product catalog, shopping cart, user authentication, and payment integration.',
       image: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['React.js', 'Redux', 'Material UI', 'Node.js'],
+      source:"https://github.com/sudarshan1pass/WTF-Fitness.git",
       icon: ShoppingCart,
       gradient: 'from-blue-500 to-purple-600'
     },
     {
-      title: 'Social Media Dashboard',
+      title: 'web site',
       description: 'A comprehensive social media management dashboard with real-time analytics, post scheduling, and user engagement metrics. Built with React.js and modern styling approaches.',
-      image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800',
-      technologies: ['React.js', 'Tailwind CSS', 'Chart.js', 'TypeScript'],
+      image: 'project.png',
+      technologies: ['React.js', 'Material UI','TypeScript','Framer Motion', 'Vite'],
       icon: Users,
-      gradient: 'from-emerald-500 to-cyan-600'
+      gradient: 'from-emerald-500 to-cyan-600',
+       source:"https://github.com/sudarshan1pass/web-site.git",
     },
     {
       title: 'Portfolio Website',
@@ -25,7 +27,8 @@ const Projects = () => {
       image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['React.js', 'Tailwind CSS', 'Framer Motion', 'Vite'],
       icon: Code,
-      gradient: 'from-orange-500 to-red-600'
+      gradient: 'from-orange-500 to-red-600',
+       source:"https://github.com/sudarshan1pass/portfolio.git",
     },
     {
       title: 'Design System Library',
@@ -33,7 +36,8 @@ const Projects = () => {
       image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
       technologies: ['React.js', 'Material UI', 'Storybook', 'TypeScript'],
       icon: Palette,
-      gradient: 'from-pink-500 to-violet-600'
+      gradient: 'from-pink-500 to-violet-600',
+       source:"",
     }
   ];
 
@@ -93,7 +97,7 @@ const Projects = () => {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                  <motion.a
+                  {/* <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     href="#"
@@ -101,11 +105,11 @@ const Projects = () => {
                   >
                     <ExternalLink size={18} />
                     <span>Live Demo</span>
-                  </motion.a>
+                  </motion.a> */} 
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    href="#"
+                    href={project.source ?project.source:'#'} 
                     className="flex items-center space-x-2 border border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:bg-gray-50 transition-all duration-200"
                   >
                     <Github size={18} />
