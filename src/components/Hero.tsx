@@ -54,17 +54,29 @@ const Hero = () => {
           >
             Hi, I'm{" "}
             <span className="bg-gradient-to-r from-blue-600 to-emerald-500 bg-clip-text text-transparent">
-              React Developer
+             Sudarshan sharma
             </span>
           </motion.h1>
-
+          {/*  */}
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="text-4xl md:text-4xl font-bold text-gray-900 mb-6"
+          >
+           Welcome to {" "}
+            <span className="bg-gradient-to-r from-red-600 to-emerald-500 bg-clip-text text-transparent">
+             my portfolio!
+            </span>
+          </motion.h1>
+{/*  */}
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto"
           >
-            Full Stack Developer passionate about creating beautiful,
+            Mern Stack Developer passionate about creating beautiful,
             functional, and user-friendly applications using React.js, Material
             UI, Tailwind CSS, and modern web technologies.
           </motion.p>
