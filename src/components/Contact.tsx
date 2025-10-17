@@ -112,12 +112,13 @@ const Contact = () => {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <Paper elevation={3} className="p-8 rounded-xl">
+            <Paper elevation={4} className="p-10 m-10  rounded-xl">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <TextField
                   fullWidth
                   label="Your Name"
                   name="name"
+                  sx={{mb:"10px"}}
                   value={formData.name}
                   onChange={handleChange}
                   required
@@ -128,6 +129,7 @@ const Contact = () => {
                   label="Email Address"
                   name="email"
                   type="email"
+                   sx={{mb:"10px"}}
                   value={formData.email}
                   onChange={handleChange}
                   required
@@ -138,6 +140,7 @@ const Contact = () => {
                   label="Your Message"
                   name="message"
                   multiline
+                   sx={{mb:"10px"}}
                   rows={6}
                   value={formData.message}
                   onChange={handleChange}
